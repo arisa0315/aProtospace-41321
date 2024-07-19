@@ -1,0 +1,9 @@
+<h1>プロトタイプ編集</h1>
+
+<% if flash.now[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash.now[:alert] %>
+  </div>
+<% end %>
+
+<%= render 'form', prototype: @prototype %>
