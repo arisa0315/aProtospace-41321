@@ -4,7 +4,8 @@ class PrototypesController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   def index
-    @prototypes = Prototype.order('created_at DESC')
+   # @prototypes = Prototype.order('created_at DESC')
+    @prototypes = Prototype.order('created_at ASC') 
   end
 
   def show

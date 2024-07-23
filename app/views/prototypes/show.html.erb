@@ -1,11 +1,14 @@
 <main class="main">
   <div class="inner">
+    
+    <!--
     <div class="prototype__wrapper">
       <p class="prototype__heading">
         <%= @prototype.title %>
       </p>
       <%= link_to "by #{@prototype.user.name}", user_path(@prototype.user), class: :prototype__user %>
-      
+      -->
+
       <% if @prototype.user == current_user %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_prototype_path(@prototype), class: :prototype__btn %>

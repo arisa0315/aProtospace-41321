@@ -40,6 +40,7 @@ a {
   background-color: #f1f8fe;
   margin-bottom: 48px;
   padding: 20px 0;
+
 }
 .inner {
   width: 1024px;
@@ -53,36 +54,36 @@ a {
 .logo {
   width: 200px;
 }
-.nav__btn {
+.nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87cefa;
+  color: #87CEFA;
   text-decoration: none;
   user-select: none;
-  border: 1px #87cefa solid;
+  border: 1px #87CEFA solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
-.nav__btn:hover {
+.nav__btn:hover{
   color: #fff;
-  background: #87cefa;
+  background: #87CEFA;
 }
 
-.nav__logout {
+.nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87cefa;
+  color: #87CEFA;
   text-decoration: none;
   user-select: none;
 }
-.nav__logout:hover {
+.nav__logout:hover{
   opacity: 0.5;
 }
 
 /* フォーム周り */
-.form__wrapper {
+.form__wrapper{
   min-height: calc(100vh - 161px);
 }
 
@@ -90,23 +91,23 @@ a {
   width: 50%;
 }
 
-.field {
+.field{
   margin: 10px 0;
 }
 
-.actions {
+.actions{
   margin-bottom: 40px;
 }
 
-.form__btn {
+.form__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #87cefa;
-  border: 1px #87cefa solid;
+  background: #87CEFA;
+  border: 1px #87CEFA solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -119,48 +120,41 @@ a {
 
 /* メイン */
 
-.greeting {
+.greeting{
   margin-bottom: 20px;
 }
-.greeting__link {
+.greeting__link{
   text-decoration: underline;
 }
 .page-heading {
   font-size: 30px;
   margin-bottom: 28px;
 }
-
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* 上寄せに修正 */
+  align-items: center;
   min-height: calc(100vh - 161px);
 }
-
 .card {
-  width: calc((100% - 50px) / 3); /* 計算式の修正 */
+  width: calc((100% - 50px) / 3);
   margin-bottom: 40px;
-  padding: 10px; /* カードの内側の余白を追加 */
-  box-sizing: border-box; /* ボックスサイジングの設定 */
 }
-
 .card__img {
   margin-bottom: 16px;
-  max-width: 100%; /* 画像の幅を100%に */
 }
-
 .card__title {
+  display: block;
   font-size: 20px;
   margin-bottom: 8px;
   font-weight: bold;
 }
-
 .card__summary {
   font-size: 16px;
 }
-
 .card__user {
+  display: block;
   font-size: 12px;
   color: #999;
   text-align: right;
@@ -168,42 +162,42 @@ a {
 }
 
 /* 詳細ページ */
-.prototype__wrapper {
+.prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
-.prototype__hedding {
+.prototype__hedding{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-.prototype__user {
+.prototype__user{
   display: block;
   font-size: 16px;
   color: #999;
   text-align: center;
   text-decoration: underline;
 }
-.prototype__image {
+.prototype__image{
   width: 40%;
   margin: 0 auto;
   padding: 16px 0;
 }
-.prototype__detail {
+.prototype__detail{
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 8px;
 }
-.detail__title {
+.detail__title{
   font-size: 20px;
   font-weight: bold;
 }
-.prototype__manage {
+.prototype__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-.prototype__btn {
+.prototype__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -215,42 +209,42 @@ a {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-.prototype__btn:hover {
+.prototype__btn:hover{
   color: #fff;
   background: #999;
 }
 
-.prototype__comments {
+.prototype__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
 }
 
-.comments_lists {
+.comments_lists{
   padding-left: 20px;
 }
 
-.comments_list {
+.comments_list{
   list-style-type: square;
   padding-bottom: 5px;
 }
 
-.comment_user {
+.comment_user{
   font-size: 16px;
   color: #999;
   text-decoration: underline;
 }
 
 /* ユーザーページ */
-.user__wrapper {
+.user__wrapper{
   min-height: calc(100vh - 161px);
 }
-.table {
+.table{
   border-collapse: collapse;
   margin-bottom: 32px;
   width: 50%;
 }
-.table__col1 {
+.table__col1{
   text-align: left;
   font-weight: bold;
   background: #fafafa;
@@ -259,7 +253,7 @@ a {
   width: 30%;
   padding: 8px;
 }
-.table__col2 {
+.table__col2{
   text-align: left;
   border: 1px solid #f5f5f5;
   border-collapse: collapse;
@@ -270,63 +264,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
-
-.prototype__item {
-  flex: 1 1 calc(33% - 20px); /* 3列レイアウト、各アイテム間に20pxのギャップ */
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.prototype__item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.prototype__item h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.prototype__item p {
-  font-size: 14px;
-  color: #666;
-}
-
-.prototype__user {
-  font-size: 12px;
-  color: #999;
-  display: block;
-  margin-top: 10px;
-  text-decoration: underline;
-}
-
-.card__actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.card__action {
-  font-size: 12px;
-  color: #87cefa;
-  text-decoration: none;
-  border: 1px solid #87cefa;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.card__action:hover {
-  background-color: #87cefa;
-  color: #fff;
-}
-
 /* フッター */
 
 .footer {
@@ -352,12 +291,12 @@ a {
     width: 48%;
     margin-bottom: 40px;
   }
-  .prototype_image {
+  .prototype_image{
     width: 60%;
   }
 }
 
-/* スマホ表示 */
+ /* スマホ表示 */
 @media (max-width: 599px) {
   .logo {
     width: 120px;
@@ -375,16 +314,10 @@ a {
   .card__summary {
     font-size: 14px;
   }
-  .prototype_image {
+  .prototype_image{
     width: 100%;
   }
-  .table {
+  .table{
     width: 100%;
   }
-}
-
-.prototypes-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
