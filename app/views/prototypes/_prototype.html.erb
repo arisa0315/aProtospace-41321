@@ -8,10 +8,8 @@
 
   <% if user_signed_in? && prototype.user_id == current_user.id %>
     <div class="card__actions">
-      <!--
       <%= link_to '編集', edit_prototype_path(prototype), class: 'card__action' %>
       <%= link_to '削除', prototype_path(prototype), method: :delete, data: { confirm: '本当に削除しますか？' }, class: 'card__action' %>
-      -->
     </div>
   <% end %>
 </div>

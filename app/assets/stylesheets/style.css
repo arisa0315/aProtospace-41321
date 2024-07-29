@@ -15,6 +15,7 @@ div {
   padding: 0;
 }
 
+
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   color: #3b4043;
@@ -162,9 +163,14 @@ a {
 }
 
 /* 詳細ページ */
-.prototype__wrapper{
+.prototype__wrapper {
   min-height: calc(100vh - 161px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
 }
+
 .prototype__hedding{
   font-size: 24px;
   font-weight: bold;
